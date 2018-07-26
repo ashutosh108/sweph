@@ -16,6 +16,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swetest", "swetest.vcxproj", "{BB0C256A-4DC5-4E9B-B455-D87F6970D00D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swetrace", "swetrace.vcxproj", "{2EADBD87-F642-4456-A465-DDEBAA4B8CC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE028725-77D6-4ADB-B3A2-78B289351213} = {AE028725-77D6-4ADB-B3A2-78B289351213}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

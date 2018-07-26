@@ -56,7 +56,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <PreprocessorDefinitions>WIN32;_CONSOLE;USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -70,7 +70,6 @@
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalLibraryDirectories>.\build\$(Configuration)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>swelib32.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <TypeLibraryName>.\..\bin/swetrace.tlb</TypeLibraryName>
@@ -95,7 +94,6 @@
       <DisableSpecificWarnings>4996;4101</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>swelib32.lib</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>.\build\$(Configuration)\</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
