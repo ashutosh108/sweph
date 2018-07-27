@@ -41,13 +41,13 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\build\$(Configuration)\</OutDir>
-    <IntDir>.\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\build\$(Configuration)\</OutDir>
+    <IntDir>..\build\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\build\$(Configuration)\</OutDir>
-    <IntDir>.\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\build\$(Configuration)\</OutDir>
+    <IntDir>..\build\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
