@@ -63,7 +63,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4101</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -71,10 +71,6 @@
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalLibraryDirectories>.\build\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
-    <Midl>
-      <TypeLibraryName>.\..\bin/swetrace.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <Culture>0x0807</Culture>
     </ResourceCompile>
@@ -99,24 +95,13 @@
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
-    <Midl>
-      <TypeLibraryName>.\..\..\bin/swetrace.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0807</Culture>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\swetrace.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </AdditionalOptions>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4996;4101</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4996;4101</DisableSpecificWarnings>
-    </ClCompile>
+    <ClCompile Include="..\src\swetrace.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="swelib32.vcxproj">

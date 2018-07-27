@@ -59,7 +59,6 @@
       <PreprocessorDefinitions>WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <PrecompiledHeader />
-      <PrecompiledHeaderOutputFile>.\Release/swetest.pch</PrecompiledHeaderOutputFile>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -73,10 +72,6 @@
       <AdditionalDependencies>swelib32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>.\build\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
-    <Midl>
-      <TypeLibraryName>.\..\bin/swetest.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <Culture>0x0807</Culture>
     </ResourceCompile>
@@ -91,7 +86,8 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalOptions>/wd4996</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -101,17 +97,13 @@
       <AdditionalDependencies>swelib32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>.\build\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
-    <Midl>
-      <TypeLibraryName>.\..\..\bin/swetest.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0807</Culture>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\swetest.c" />
+    <ClCompile Include="..\src\swetest.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="swelib32.vcxproj">

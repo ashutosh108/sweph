@@ -67,14 +67,6 @@
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalDependencies>user32.lib</AdditionalDependencies>
     </Link>
-    <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MkTypLibCompatible>true</MkTypLibCompatible>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\..\..\bin/swewin32.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0807</Culture>
@@ -96,30 +88,16 @@
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalDependencies>user32.lib</AdditionalDependencies>
     </Link>
-    <Midl>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MkTypLibCompatible>true</MkTypLibCompatible>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\Debug/swewin32.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0807</Culture>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\swewin.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
+    <ClCompile Include="..\src\swewin.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\swewin.rc">
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\devlop\sweph\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\devlop\sweph\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
+    <ResourceCompile Include="..\src\swewin.rc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="swelib32.vcxproj">

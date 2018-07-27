@@ -96,43 +96,16 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\swecl.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swedate.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swedllst.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swehel.c" />
-    <ClCompile Include="..\swehouse.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swejpl.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swemmoon.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swemplan.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\sweph.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="..\swephlib.c">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
-    </ClCompile>
+    <ClCompile Include="..\src\swecl.c" />
+    <ClCompile Include="..\src\swedate.c" />
+    <ClCompile Include="..\src\swedllst.c" />
+    <ClCompile Include="..\src\swehel.c" />
+    <ClCompile Include="..\src\swehouse.c" />
+    <ClCompile Include="..\src\swejpl.c" />
+    <ClCompile Include="..\src\swemmoon.c" />
+    <ClCompile Include="..\src\swemplan.c" />
+    <ClCompile Include="..\src\sweph.c" />
+    <ClCompile Include="..\src\swephlib.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
