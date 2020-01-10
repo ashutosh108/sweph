@@ -4351,7 +4351,6 @@ static int get_new_segment(double tjd, int ipli, int ifno, char *serr)
   return(OK);
 return_error_gns:
   fclose(fdp->fptr);
-  free(fdp->fptr);
   fdp->fptr = NULL;
   free_planets();
   return ERR;
@@ -4711,7 +4710,6 @@ file_damage:
   }
 return_error:
   fclose(fdp->fptr);
-  free(fdp->fptr);
   fdp->fptr = NULL;
   free_planets();
   return(ERR);
